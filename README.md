@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# 2023/11/14
+
+# 2023/11
+
+1. 透過 npx 建立一個 react project
+2. {} expression 執行式
+3. html tag css 宣告 與 inline style 使用
+4. props 傳值學習
+5. Event onClick 學習
+6. Hooks - State 學習

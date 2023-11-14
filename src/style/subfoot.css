@@ -1,0 +1,17 @@
+.background-data {
+  width: 100%;
+  background-color: rgb(62, 56, 56);
+  color: beige;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:left;
+  margin-top: 5vw;
+  
+}
+
+.div-commond {
+  width: 300px;
+  margin: 30px;
+  background-color: rgb(146, 162, 42);
+}/*# sourceMappingURL=subfoot.css.map */
