@@ -70,6 +70,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # 2023/11/14
+1. 頁面滑動 從 CSS 改成 用 JS
+2. 調整 react 產生的 error, select tag 從 value 改用 defaultValue
+3. 調整 react 產生的 error, textarea tag 從 value 改用 defaultValue
 
 # 2023/11
 

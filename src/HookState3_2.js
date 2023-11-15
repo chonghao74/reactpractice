@@ -9,7 +9,7 @@ const HookState3_2 = (props) => {
         id="textData"
         cols="20"
         rows="10"
-        value={props.common}
+        defaultValue={props.common}
       ></textarea>
     </div>
   );

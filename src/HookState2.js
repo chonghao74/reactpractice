@@ -61,7 +61,7 @@ const HookState2 = () => {
           id="textData"
           cols="20"
           rows="10"
-          value={inputText}
+          defaultValue={inputText}
         ></textarea>
       </div>
     </div>

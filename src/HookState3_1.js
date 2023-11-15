@@ -31,7 +31,7 @@ const HookState3_1 = (props) => {
 
         setInputData(inputInit);
         setGenderData(genderInit);
-        // document.getElementById("hook-select").value = genderInit;
+        document.getElementById("hook-select").value = genderInit;
       }
     }
   };
@@ -47,11 +47,10 @@ const HookState3_1 = (props) => {
       />
       <select
         id="hook-select"
-        defaultValue={genderInit}
-        value={genderData}
         onChange={(e) => {
           getGenderData(e);
         }}
+        defaultValue={genderData}
       >
         <option value="0">Male</option>
         <option value="1">Female</option>
