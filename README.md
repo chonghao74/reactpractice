@@ -70,9 +70,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # 2023/11/14
-1. 頁面滑動 從 CSS 改成 用 JS
-2. 調整 react 產生的 error, select tag 從 value 改用 defaultValue
-3. 調整 react 產生的 error, textarea tag 從 value 改用 defaultValue
 
 # 2023/11
 
@@ -82,3 +79,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 4. props 傳值學習
 5. Event onClick 學習
 6. Hooks - State 學習
+7. 頁面滑動 從 CSS 改成 用 JS
+8. 調整 react 產生的 error, select tag 從 value 改用 defaultValue
+9. 調整 react 產生的 error, textarea tag 從 value 改用 defaultValue
+10. Hooks - Effect 學習
+11. Class Component 學習
+12. Route 路由學習

@@ -1,17 +1,16 @@
 .background-data {
   width: 100%;
-  background-color: rgb(62, 56, 56);
+  height: 40px;
+  background-color: rgb(221, 25, 25);
   color: beige;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:left;
-  margin-top: 5vw;
-  
+  justify-content: left;
 }
 
 .div-commond {
   width: 300px;
-  margin: 30px;
-  background-color: rgb(146, 162, 42);
+  margin: 20px;
+  background-color: rgb(34, 0, 255);
 }/*# sourceMappingURL=subfoot.css.map */

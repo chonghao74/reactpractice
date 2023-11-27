@@ -1,8 +1,8 @@
 import React from "react";
-import "./style/infor.css";
+import "../../style/infor.css";
 
 const info = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="div-default">
       <div>

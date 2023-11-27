@@ -1,5 +1,5 @@
 import React from "react";
-import "./style/subfoot.css";
+import "../../style/subfoot.css";
 
 const Foot = () => {
   let friends = ["Tim", "Ivy", "Oliver"];

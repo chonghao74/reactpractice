@@ -1,11 +1,12 @@
-import { useState } from "react";
-import Nav from "../src/nav";
-import Foot from "../src/foot";
-import Info from "./info";
-import HookState1 from "./HookState1";
-import HookState2 from "./HookState2";
-import HookState3_1 from "./HookState3_1";
-import HookState3_2 from "./HookState3_2";
+import { useState, useEffect } from "react";
+import Nav from "./component/functional/nav";
+import Foot from "./component/functional/foot";
+import Info from "./component/functional/info";
+import HookState1 from "./component/functional/HookState1";
+import HookState2 from "./component/functional/HookState2";
+import HookState3_1 from "./component/functional/HookState3_1";
+import HookState3_2 from "./component/functional/HookState3_2";
+import Car from "./component/class/Car";
 import "./style/app.css";
 
 function App() {
@@ -25,6 +26,29 @@ function App() {
 
   let [common, setCommon] = useState([]);
 
+  // window.onbeforeunload = function () {
+  //   return "你還沒有完成你的文章，就這樣離開了嗎？";
+  // };
+
+  window.addEventListener("beforeunload", function (e) {
+    e.preventDefault();
+    var confirmationMessage = "你還沒有完成你的文章，就這樣離開了嗎？";
+
+    e.returnValue = confirmationMessage; //Gecko + IE
+    return confirmationMessage; //Webkit, Safari, Chrome
+  });
+
+  let [btnWord, setbtnWord] = useState("Btn");
+
+  useEffect(() => {
+    console.log(`Btn Name is ${btnWord}`);
+  }, [btnWord]);
+
+  const btnChange = (e) => {
+    e.preventDefault();
+    Math.random() * 10 > 5 ? setbtnWord("btn") : setbtnWord("Btn");
+  };
+
   return (
     <div>
       <header>
@@ -39,7 +63,7 @@ function App() {
 
         <section className="section-cs">
           {myFriends.map((element, index) => {
-            console.log(element);
+            // console.log(index);
             return (
               <Info
                 key={index}
@@ -82,6 +106,18 @@ function App() {
               </div>
             </div>
           </div>
+        </section>
+        <section>
+          <button
+            onClick={(e) => {
+              btnChange(e);
+            }}
+          >
+            {btnWord}
+          </button>
+        </section>
+        <section>
+          <Car color={"Black"}></Car>
         </section>
       </main>
       <footer>
