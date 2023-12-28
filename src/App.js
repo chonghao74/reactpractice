@@ -8,6 +8,7 @@ import HookState3_1 from "./component/functional/HookState3_1";
 import HookState3_2 from "./component/functional/HookState3_2";
 import Car from "./component/class/Car";
 import "./style/app.css";
+import { DatePicker } from "antd";
 
 function App() {
   const myFriends = [
@@ -53,6 +54,7 @@ function App() {
     <div>
       <header>
         <Nav />
+        <DatePicker />
       </header>
       <main>
         <h1 style={{ marginLeft: "10px", marginRight: "10px" }}>
