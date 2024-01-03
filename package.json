@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.11.5",
     "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "dotenv-cli": "^7.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
@@ -15,7 +17,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "dotenv -e env/.env.local react-scripts start",
+    "start-dev": "dotenv -e env/.env.dev react-scripts start",
+    "start-sit": "dotenv -e env/.env.sit react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

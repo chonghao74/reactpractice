@@ -4,8 +4,8 @@ import Foot from "./component/functional/foot";
 import Info from "./component/functional/info";
 import HookState1 from "./component/functional/HookState1";
 import HookState2 from "./component/functional/HookState2";
-import HookState3_1 from "./component/functional/HookState3_1";
-import HookState3_2 from "./component/functional/HookState3_2";
+import HookState31 from "./component/functional/HookState3_1";
+import HookState32 from "./component/functional/HookState3_2";
 import Car from "./component/class/Car";
 import "./style/app.css";
 import { DatePicker } from "antd";
@@ -16,6 +16,10 @@ function App() {
     { number: 2, name: "Ivy", age: 39 },
     { number: 3, name: "Oliver", age: 5 },
   ];
+
+  console.log(`global:${process.env.NODE_ENV}`);
+  console.log(`global:${process.env.REACT_APP_PORT}`);
+
 
   const noinput = () => {
     alert("touchMe");
@@ -43,6 +47,7 @@ function App() {
 
   useEffect(() => {
     console.log(`Btn Name is ${btnWord}`);
+    console.log(window.location.origin);
   }, [btnWord]);
 
   const btnChange = (e) => {
@@ -51,7 +56,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div id="img_set" >
       <header>
         <Nav />
         <DatePicker />
@@ -98,13 +103,13 @@ function App() {
           <div className="div-cs">
             <div className="div-flext">
               <div>
-                <HookState3_1
+                <HookState31
                   common={common}
                   setCommon={setCommon}
-                ></HookState3_1>
+                ></HookState31>
               </div>
               <div>
-                <HookState3_2 common={common}></HookState3_2>
+                <HookState32 common={common}></HookState32>
               </div>
             </div>
           </div>

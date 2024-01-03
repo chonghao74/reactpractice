@@ -17,3 +17,21 @@ html{
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+#img_set{
+  background-image: url('/public/images/deskLands.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (orientation:landscape){
+  #img_set{
+    background-image: url('/public/images/deskLands.jpeg');
+  }
+}
+
+@media screen and (orientation:portrait) and (max-width: 700px) {
+  #img_set{
+    background-image: url('/public/images/mobilePort.jpeg');
+  }
+}
